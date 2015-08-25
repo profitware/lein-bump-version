@@ -7,7 +7,7 @@ A Leiningen plugin to update a depenency in your project file.
 In `:plugins` in your `project.clj`:
 
 ```text
-[lein-update-dependency "0.1.0-SNAPSHOT"]
+[lein-update-dependency "0.1.0"]
 ```
 
 Update a dependency with:
