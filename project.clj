@@ -4,4 +4,5 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :plugins [[rewrite-clj "0.4.12"]]
+  :signing {:gpg-key "A4D5C342"}
   :eval-in-leiningen true)
