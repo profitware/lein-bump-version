@@ -1,4 +1,4 @@
-(defproject lein-update-dependency "0.1.1"
+(defproject lein-update-dependency "0.1.2"
   :description "Programmatically update a Leiningen dependency"
   :url "https://github.com/LonoCloud/lein-update-dependency"
   :license {:name "Eclipse Public License"
