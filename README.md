@@ -1,5 +1,7 @@
 # lein-bump-version
 
+[![Clojars Project](https://img.shields.io/clojars/v/lein-bump-version.svg)](https://clojars.org/lein-bump-version)
+
 A Leiningen plugin to bump project version and project group dependencies to the same version.
 
 ## Usage
@@ -21,6 +23,7 @@ See your `project.clj` file update.
 ## License
 
 Copyright © 2015 ViaSat
+
 Copyright © 2017 Sergey Sobko
 
 Distributed under the Eclipse Public License either version 1.0 or (at
