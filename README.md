@@ -9,7 +9,7 @@ A Leiningen plugin to bump project version and project group dependencies to the
 In `:plugins` in your `project.clj`:
 
 ```text
-[lein-bump-version "0.1.3"]
+[lein-bump-version "0.1.4"]
 ```
 
 Bump version for project and all dependencies of the project group:
@@ -30,7 +30,7 @@ See your `project.clj` file update.
 
 Copyright © 2015 ViaSat
 
-Copyright © 2017 Sergey Sobko
+Copyright © 2018 Sergey Sobko
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
