@@ -1,5 +1,6 @@
 (ns leiningen.bump-version
   (:require [clojure.string :as s]
+            [clojure.java.io :as io]
             [rewrite-clj.zip :as z]))
 
 (defn- get-project-name-token [project-root-token dep-group-str]
@@ -98,7 +99,8 @@
   ([project version-str]
    (bump-version project version-str "project.clj" nil))
   ([project version-str project-file dep-group-str]
-   (let [project-root-token (z/of-file project-file)
+   (let [project-file-str (.getPath (io/file (get project :root) project-file))
+         project-root-token (z/of-file project-file-str)
          project-name-token (get-project-name-token project-root-token dep-group-str)
          project-group-str (get-project-group-str dep-group-str project-name-token)
          project-old-version-str (get-project-old-version-str project-name-token)
@@ -120,4 +122,4 @@
                              new-base-token)]
      (some-> bumped-tree-token
              z/root
-             ((fn [x] (spit project-file x)))))))
+             ((fn [x] (spit project-file-str x)))))))
