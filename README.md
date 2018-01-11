@@ -9,7 +9,7 @@ A Leiningen plugin to bump project version and project group dependencies to the
 In `:plugins` in your `project.clj`:
 
 ```text
-[lein-bump-version "0.1.4"]
+[lein-bump-version "0.1.5"]
 ```
 
 Bump version for project and all dependencies of the project group:
@@ -22,6 +22,12 @@ To increment the PATCH version of the project you may simply use:
 
 ```
 $ lein bump-version
+```
+
+You may also use the plugin to update dependencies by their group:
+
+```
+$ lein bump-version 0.1.6 project.clj lein-bump-version
 ```
 
 See your `project.clj` file update.
